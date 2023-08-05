@@ -11,7 +11,17 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Say hello
-        run: |
+        run:
           echo "Hello World!"
-          date
-          ls
+          
+  now_it_is_job:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: current_date
+        run: date
+        
+  director_contents_job:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: directory_contents
+        run: ls -l
