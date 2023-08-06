@@ -1,12 +1,13 @@
 module.exports = {
   env: {
-    node: true,
+    browser: true,
     es6: true,
     "jest/globals": true,
   },
-  // globals: {
-  //   process: "writable",
-  // },
+  globals: {
+    process: "writable",
+    document: "writable",
+  },
   extends: ["eslint:recommended", "plugin:react/recommended"],
   parserOptions: {
     ecmaFeatures: {
