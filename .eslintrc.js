@@ -18,6 +18,7 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["react", "jest", "cypress"],
+  ignorePatterns: ["cypress.config.js"],
   rules: {
     indent: ["error", 2],
     "linebreak-style": ["error", "unix"],
